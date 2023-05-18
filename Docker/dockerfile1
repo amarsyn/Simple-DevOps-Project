@@ -1,0 +1,4 @@
+# Docker file to move contents of webapps.dist to webapps
+# save as Dockerfile to create a image name "demotomcat"
+FROM tomcat:latest
+RUN cp -R * /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps/
